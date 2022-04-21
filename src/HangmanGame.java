@@ -49,7 +49,7 @@ public class HangmanGame {
      */
     public void wordSelect(){
         Random randy = new Random();
-        word = wordList.get(randy.nextInt(0, (wordList.size()) - 1));
+        word = wordList.get(randy.nextInt(wordList.size()));
         wordArray = new char[word.length()];
         for(int i = 0; i < word.length(); i++) {
             wordArray[i] = '_';
